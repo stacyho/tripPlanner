@@ -37,9 +37,41 @@
 			</div>
 			<div class="col-md-4"> 
 				<div class="pin-pg board"> Restaurants </div>
+
+				<?php
+				
+				//counts for ALL objects! This determines the temporary id for the objects!
+				$counter = 0;
+
+				$names = ["Hello", "From", "The"];
+
+				for ($x=0; $x < sizeof($names); $x++) {
+					echo "<div class='pin-pg pin-box text-center'>";
+					echo "<p id='pin-$counter' class='pin-pg pin-text text-center' data-category='restaurant'>$names[$x]</p>";
+					echo "<input id='$counter' type='button' class='btn btn-default pin-pg pin-btn pull-right' value='Pin Me!'>";
+					echo "</div>";
+					$counter = $counter + 1;
+				}
+				?> 
 			</div>
 			<div class="col-md-4"> 
 				<div class="pin-pg board"> Hotels </div>
+
+				<?php
+				
+				//counts for ALL objects! This determines the temporary id for the objects!
+				$counter = 0;
+
+				$names = ["Hello", "From", "The"];
+
+				for ($x=0; $x < sizeof($names); $x++) {
+					echo "<div class='pin-pg pin-box text-center'>";
+					echo "<p id='pin-$counter' class='pin-pg pin-text text-center' data-category='hotel'>$names[$x]</p>";
+					echo "<input id='$counter' type='button' class='btn btn-default pin-pg pin-btn pull-right' value='Pin Me!'>";
+					echo "</div>";
+					$counter = $counter + 1;
+				}
+				?> 
 			</div>
 		</div>
 	</div> 
