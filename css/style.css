@@ -8,13 +8,10 @@
 }
 
 .pin-pg.pin-box {
-	width: 75%;
+	width: 95%;
 	height: 45px;
 	border: 1px solid black;
-	border-radius: 10px;
 	margin: auto;
-	padding-top: 2px;
-	padding-bottom: 2px;
 }
 
 .pin-pg.pin-text {
@@ -24,5 +21,32 @@
 
 .pin-pg.pin-btn {
 	margin-right: 5%;
-	margin-top: 1.5%;
+	margin-top: 3%;
+}
+
+/* ----------NAVBAR---------- */
+
+.navbar.tab {
+	display: inline-block;
+	margin: 0px 20px 0px 0px;
+	width: 20%;
+	height: 100%;
+	font-size: 18px;
+	border-bottom: 1px black solid;
+	border-radius: 0px;
+	font-family: "Lucida Handwriting";
+}
+
+a.tab:link {
+	text-decoration: none;
+	color: #678d58;
+}
+
+a.tab:visited {
+	color: #678d58;
+}
+
+.tab:hover {
+	cursor: pointer;
+	background-color: #fff8dc;
 }
