@@ -5,16 +5,20 @@
 	padding: 10px;
 	font-family: "Raleway";
 	font-size: 20px;
+	text-align: center;
 }
 
 .pin-pg.pin-box {
 	width: 75%;
-	height: 45px;
-	border: 1px solid black;
+	border: 2px solid gray;
 	border-radius: 10px;
-	margin: auto;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: "Raleway";
 }
 
 .pin-pg.pin-text {
