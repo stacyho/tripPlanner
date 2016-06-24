@@ -62,13 +62,13 @@
 				$restaurants = json_decode($json_restaurants,true);
 				for ($x=0; $x < $SEARCH_LIMIT; $x++) {
 
-					$id = $tourist_attractions['businesses'][$x]['id'];
-					$name = $tourist_attractions['businesses'][$x]['name'];
-					$image = $tourist_attractions['businesses'][$x]['image_url'];
-					$address = $tourist_attractions['businesses'][$x]['location.address'];
-					$city = $tourist_attractions['businesses'][$x]['location.city'];
-					$country = $tourist_attractions['businesses'][$x]['location.country_code'];
-					$rating = $tourist_attractions['businesses'][$x]['rating'];
+					$id = $restaurants['businesses'][$x]['id'];
+					$name = $restaurants['businesses'][$x]['name'];
+					$image = $restaurants['businesses'][$x]['image_url'];
+					$address = $restaurants['businesses'][$x]['location.address'];
+					$city = $restaurants['businesses'][$x]['location.city'];
+					$country = $restaurants['businesses'][$x]['location.country_code'];
+					$rating = $restaurants['businesses'][$x]['rating'];
 
 
 					echo "<div class='pin-pg pin-box text-center'>";
@@ -93,13 +93,13 @@
 				$hotels = json_decode($json_hotels,true);
 				for ($x=0; $x < $SEARCH_LIMIT; $x++) {
 					
-					$id = $tourist_attractions['businesses'][$x]['id'];
-					$name = $tourist_attractions['businesses'][$x]['name'];
-					$image = $tourist_attractions['businesses'][$x]['image_url'];
-					$address = $tourist_attractions['businesses'][$x]['location.address'];
-					$city = $tourist_attractions['businesses'][$x]['location.city'];
-					$country = $tourist_attractions['businesses'][$x]['location.country_code'];
-					$rating = $tourist_attractions['businesses'][$x]['rating'];
+					$id = $hotels['businesses'][$x]['id'];
+					$name = $hotels['businesses'][$x]['name'];
+					$image = $hotels['businesses'][$x]['image_url'];
+					$address = $hotels['businesses'][$x]['location.address'];
+					$city = $hotels['businesses'][$x]['location.city'];
+					$country = $hotels['businesses'][$x]['location.country_code'];
+					$rating = $hotels['businesses'][$x]['rating'];
 
 
 					echo "<div class='pin-pg pin-box text-center'>";
