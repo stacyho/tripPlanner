@@ -10,8 +10,6 @@ $(document).ready(function(){
 
 function db_insert_pin(data) {
 
-	console.log(jQuery.type(data.dataset.pinid));
-
 	$.ajax({
 		url: "/tripPlanner/tripPlanner/php/pin-sql.php",
 		type: "POST",
@@ -23,10 +21,10 @@ function db_insert_pin(data) {
 			country: data.dataset.country
 		},
 		success: function(text) {
-			console.log(text);
+			console.log("SUCCESS: db_insert_pin");
 		},
 		error: function(text) {
-			console.log("Could not run pin-sql.php"+ " "+ text);
+			console.log("ERROR: db_insert_pin -> pin-sql.php");
 		}
 	});
 }

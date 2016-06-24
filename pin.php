@@ -8,8 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
 	<link rel="stylesheet" type='text/css' href="css/style.css">
 	<!-- JAVASCRIPT -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="js/pin.js"></script>
 	<!-- FONTS -->
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway'>
@@ -35,15 +34,15 @@
 					$id = $tourist_attractions['businesses'][$x]['id'];
 					$name = $tourist_attractions['businesses'][$x]['name'];
 					$image = $tourist_attractions['businesses'][$x]['image_url'];
-					$address = $tourist_attractions['businesses'][$x]['location.address'];
-					$city = $tourist_attractions['businesses'][$x]['location.city'];
-					$country = $tourist_attractions['businesses'][$x]['location.country_code'];
+					$address = $tourist_attractions['businesses'][$x]['location']['address'][0];
+					$city = $tourist_attractions['businesses'][$x]['location']['city'];
+					$country = $tourist_attractions['businesses'][$x]['location']['country_code'];
 					$rating = $tourist_attractions['businesses'][$x]['rating'];
 
 
 					echo "<div class='pin-pg pin-box text-center'>";
 					    //name
-						echo "<div id='pin-".$id."' class='pin-pg pin-name text-center' data-category='tourist' data-pinid=$id data-city=$city data-country=$country> $name </div>"; 
+						echo "<div id='pin-".$id."' class='pin-pg pin-name text-center' data-category='tourist' data-pinid=$id data-city=$city data-address='$address' data-country=$country> $name </div>"; 
 						//image
 						echo "<img class='pin-pg pin-img' src=$image>";
 						//button

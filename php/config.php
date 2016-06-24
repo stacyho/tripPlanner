@@ -8,11 +8,11 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'ez86');    
 
 // Your course server password
-define('DB_PASSWORD', 'bunny242'); 
+define('DB_PASSWORD', '123'); 
 
 // The name of the database to which you want to connect
 // info230_SP16_username - info230_SP16_sm68sp16
-define('DB_NAME', 'League');    
+define('DB_NAME', 'TripPlanner');    
 
 $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
