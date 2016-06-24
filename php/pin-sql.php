@@ -1,10 +1,12 @@
 <?php 
 
-$pinid = filter_input('POST', 'pinID', FILTER_SANITIZE_STRING);
+$pinid = filter_input('POST', 'pinid', FILTER_SANITIZE_STRING);
 $category = filter_input('POST', 'category', FILTER_SANITIZE_STRING);
 $address = filter_input('POST', 'address', FILTER_SANITIZE_STRING);
 $city = filter_input('POST', 'city', FILTER_SANITIZE_STRING);
 $country = filter_input('POST', 'country', FILTER_SANITIZE_STRING);
+
+echo gettype($category);
 
 include_once 'config.php';
 // if can't connect

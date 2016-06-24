@@ -64,7 +64,8 @@ function request($host, $path) {
             throw new Exception('Failed to initialize');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt ($ch, CURLOPT_CAINFO, 'C:\Users\Stacy\Documents\Project\tripPlanner\php\cacert.pem');
+        $abs_path = realpath('php/cacert.pem');
+        curl_setopt ($ch, CURLOPT_CAINFO, realpath($abs_path));
         $data = curl_exec($ch);
         if (FALSE === $data)
             throw new Exception(curl_error($ch), curl_errno($ch));
