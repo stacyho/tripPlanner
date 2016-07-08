@@ -1,3 +1,5 @@
+/* ----------PIN PAGE---------*/
+
 .pin-pg.category{
 	border: 5px solid black;
 	border-radius: 10px;
@@ -42,4 +44,26 @@ a.tab:visited {
 .tab:hover {
 	cursor: pointer;
 	background-color: #fff8dc;
+}
+
+/* ----------CALENDAR---------*/
+#calendar{
+	float: left;
+	width: 70%;
+	padding: 20px;
+}
+#calendar-pins{
+	float: right;
+	width: 30%;
+	padding: 20px;
+}
+.calendar-pin, .ui-draggable-dragging{
+	width: 150px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	padding: 10px;
+	font-family: "Raleway";
+	cursor: -webkit-grab;
+	z-index: 10;
+	background-color: #E6E6FA;
 }
